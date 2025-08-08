@@ -1,6 +1,7 @@
-print("1 : 1")
+def next_num(n1, n2):
+    return n1+n2, n1
 n1 = 1
 n2 = 0
-for i in range(100):
-    n1, n2 = n1+n2, n1
-    print(i+2, " : ", n1)
+while True:
+    n1, n2 = next_num(n1, n2)
+    print(n1)
